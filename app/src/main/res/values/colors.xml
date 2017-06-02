@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="all_textColor">#333333</color>
+    <color name="black_translucent">#80000000</color>
+
+    <color name="psts_background_tab_pressed">#1AFFFFFF</color>
+    <color name="psts_background_tab_pressed_ripple">#AAFFFFFF</color>
+
+    <color name="background_window">#FFE5E5E5</color>
+    <color name="banana">#FFCC00</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <color name="tabs_bg">#F9F9F9</color>
+
+    <color name="tabs_text">#000000</color>
+    <color name="tabs_text_selected">#666666</color>
+
+    <color name="row1">#F2F2F2</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="cart_is_empty">#E6B700</color>
+
+    <color name="dates_bg_color">#2B66B1</color>
+
+    <!--<color name="colorPrimary">#17365D</color>
+    <color name="colorPrimaryDark">#102642</color>-->
+    <color name="colorPrimary">#00aced</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <!--<color name="windowBackground">#EDEDED</color>-->
+    <color name="windowBackground">#E0E0E0</color>
+    <!--<color name="navigationBarColor">#153154</color>
+    <color name="colorAccent">#CC17365D</color>-->
+    <color name="navigationBarColor">#15424242</color>
+    <color name="colorAccent">#15424242</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="red">#FF0000</color>
+
+    <color name="shadow">#555555</color>
+    <color name="grey">#A8A8A8</color>
+    <color name="black">#000000</color>
+    <color name="menu_button_pressed">#FFFFFF</color>
+    <color name="menu_button_unpressed">#E7E7E7</color>
+
+    <color name="slot_available">#4CAF50</color>
+    <color name="slot_not_available">#B71C1C</color>
+
+    <color name="selected_gray">#ffdbdbdb</color>
+    <color name="myTextPrimaryColor">#212121</color>
+
+    <color name="buttons_bg_color">#00BBD5</color>
+    <color name="buttons_bg_color_btn">#8000BBD5</color>
+
+    <!--Payment Gateway-->
+    <color name="citrus_primary">#F3A62E</color>
+    <color name="citrus_primary_dark">#E19928</color>
+    <color name="citrus_accent">#7AA4D5</color>
+    <color name="citrus_white">#FFFFFF</color>
+    <color name="citrus_black">#000000</color>
+    <color name="citrus_app_background_color">#EEEEEE</color>
+    <color name="citrus_label_color">#909090</color>
+    <color name="citrus_text_color">#575757</color>
+    <color name="citrus_text_color_light">#818181</color>
+    <color name="citrus_amount_color">#77C83E</color>
+    <color name="citrus_button_shadow_color">#80000000</color>
+    <color name="citrus_separator_color">#F3F2F2</color>
+    <color name="citrus_cvv_color">#414A5A</color>
+    <color name="citrus_warn_color">#F05E5E</color>
+
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+    <color name="genre">#666666</color>
+    <color name="year">#888888</color>
+
+    <!--Events-->
+    <!-- Greyscales -->
+    <color name="grey200">#EEEEEE</color>
+    <color name="grey600">#757575</color>
+    <color name="black_alpha_12">#1F000000</color>
+    <color name="black_alpha_30">#4D000000</color>
+
+    <!-- Others -->
+    <color name="yellow300">#FFF176</color>
+
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+    <!--<include layout="@layout/toolbar" />-->
+    <include layout="@layout/header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerID" >
+
+        <LinearLayout
+            android:id="@+id/menuMainLLID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:background="@color/dates_bg_color"
+            android:padding="8dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:transitionName="tNameHolder">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:transitionName="tNameHolder">
+
+                    <TextView
+                        android:id="@+id/pickedCourtTVID"
+                        style="@style/headerTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#FFF" />
+
+                    <TextView
+                        android:id="@+id/pricePerSlotTVID"
+                        style="@style/headerTitle_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:transitionName="tNameHolder">
+
+                    <TextView
+                        android:id="@+id/pickeddateTVID"
+                        style="@style/headerTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/yearTVID"
+                        style="@style/headerTitle_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/menuMainLLID"
+        android:background="#282828" />
+
+        <ListView
+            android:id="@+id/sportDetailsLVID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line"
+            android:animationCache="false"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:paddingTop="0dp"
+            android:scrollingCache="false"
+            android:smoothScrollbar="true" />
+
+        <in.playcer.libs.ProgressWheel
+            android:id="@+id/progress_wheel1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            wheel:matProg_barColor="#5588FF"
+            wheel:matProg_progressIndeterminate="true" />
+
+        <include layout="@layout/dialog_layout_no_network"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

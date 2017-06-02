@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/registrationRLID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/sportsCardCVID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF">
+
+                <FrameLayout
+                    android:id="@+id/sportsCardFrameFLID"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/mainHolder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:selectableItemBackground"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/NameHolder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/bookingIDTVID"
+                                    style="@style/headerTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="left"
+                                    android:text=""
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+
+                                <TextView
+                                    android:id="@+id/clubNameTVID"
+                                    style="@style/headerTitle_small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="left"
+                                    android:text=""
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+
+                                <TextView
+                                    android:id="@+id/sportNameTVID"
+                                    style="@style/headerTitle_small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="left"
+                                    android:text=""
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="bottom"
+                                android:gravity="bottom"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="bottom"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/pickeddateTVID"
+                                        style="@style/headerTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:singleLine="true"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="#333333" />
+
+                                    <TextView
+                                        android:id="@+id/PickedSlotTimeTVID"
+                                        style="@style/headerTitle_small"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:singleLine="true"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="#333333" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="3dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/locationTVID"
+                                        style="@style/headerTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:singleLine="true"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="#333333" />
+
+                                    <TextView
+                                        android:id="@+id/cityTVID"
+                                        style="@style/headerTitle_small"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:singleLine="true"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="#333333" />
+
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

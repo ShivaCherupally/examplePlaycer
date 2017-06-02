@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noNetworkConnectRLID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/stylished_button_options"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imgLogoutTitleIVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/alert1"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/alertLogoutTitleTVID"
+                    style="@style/alert_titles"
+                    android:text="@string/sry_for_delay"
+                    android:textColor="#333333" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/noConnTVID"
+                style="@style/alertMessagesTexts"
+                android:text="@string/we_had_pblm_connt"
+                android:textColor="#333333" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/selected_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="15dp">
+
+                <Button
+                    android:id="@+id/noNetWorkTryAgainBtnID"
+                    style="@style/alert_ok_yes_buttons"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_boundary_rect2"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="@string/try_again" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

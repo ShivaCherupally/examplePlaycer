@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sportsCardCVID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/mainHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="@dimen/list_margin_left"
+            android:layout_marginRight="@dimen/list_margin_right"
+            android:layout_marginTop="2dp"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/slotTitleTVID"
+                style="@style/headerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#333333" />
+
+            <LinearLayout
+                android:id="@+id/row1LLID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/slotTitleTVID"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <TextView
+                    android:id="@+id/row11TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row12TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row13TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row14TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row15TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row16TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#B71C1C"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row17TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row2LLID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row1LLID"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <TextView
+                    android:id="@+id/row21TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row22TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#B71C1C"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row23TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row24TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row25TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#B71C1C"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row26TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row27TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row3LLID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row2LLID"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <TextView
+                    android:id="@+id/row31TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row32TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row33TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#B71C1C"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row34TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row35TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row36TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#B71C1C"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row37TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/row4LLID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row3LLID"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <TextView
+                    android:id="@+id/row41TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row42TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row43TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#B71C1C"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row44TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row45TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row46TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#B71C1C"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/row47TVID"
+                    style="@style/slots_times_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.9dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,416 @@
+<resources>
+    <string name="app_name">Playcer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my">Details</string>
+    <string name="action_contact">Contact</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_closed">Close</string>
+
+    <string name="action_search">Search</string>
+    <string name="drawer_close">Close</string>
+    <string name="action_filter">Filter</string>
+
+    <string name="nav_item_home">SPORTS</string>
+    <string name="nav_item_news">SPORTSCAFE.IN</string>
+    <!--<string name="nav_item_news">NEWS</string>-->
+
+    <string name="update_available_text">Newer Version Available!</string>
+    <string name="update_version_message">Do you want to download new version?</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_My_bookings</item>
+        <!--<item>@string/nav_item_about</item>-->
+        <item>@string/nav_item_rate</item>
+    </string-array>
+
+    <string name="reg_Name">Name</string>
+    <string name="reg_email">Email</string>
+    <string name="reg_phone">Phone Number</string>
+    <string name="reg_referral_code">Referral Code (Optional)</string>
+    <string name="reg_btn_text">REGISTER</string>
+    <string name="ver_btn_text">VERIFY</string>
+    <string name="login_btn_text">LOGIN</string>
+    <string name="exist_user_btn_text">EXISTING USER LOGIN</string>
+    <string name="loading_text">Loading Please Wait..</string>
+
+
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_phoneno">Enter the Phone Number</string>
+    <string name="err_msg_refferalcode">Enter the Refferal Code</string>
+
+    <string name="title_activity_citrus">PROCESSING PAYMENT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_my_cash">My Cash</string>
+    <string name="text_wallet_promotion">Pay with your wallet and get exciting offers and cashbacks!
+    </string>
+    <string name="text_setup_your_wallet">Setup Your Wallet</string>
+    <string name="text_setup_your_wallet_now">Setup Your Wallet Now</string>
+    <string name="text_credit_debit">Credit/Debit Cards</string>
+    <string name="text_credit_debit_promotion">PAY WITH A CREDIT OR DEBIT CARD</string>
+    <string name="text_net_banking">Net Banking</string>
+    <string name="text_other_banks">SELECT OTHER BANKS</string>
+    <string name="text_shopmatic_tores">PAY</string>
+    <string name="text_your_balance">Your Balance</string>
+    <string name="rs">\u20B9</string>
+    <string name="text_my_cards">My Cards</string>
+    <string name="text_pay_now">Pay Now</string>
+    <string name="text_add_money_pay"><![CDATA[ADD MONEY & PAY NOW]]></string>
+    <string name="text_card_holder">CARD HOLDER</string>
+    <string name="text_valid_lable">VALID THRU</string>
+    <string name="text_enter_cvv">Enter CVV</string>
+    <string name="hint_card_number">CARD NUMBER</string>
+    <string name="hint_owner_name">NAME AS ON CARD</string>
+    <string name="text_add_card">Add Card</string>
+    <string name="text_expiry">EXPIRY</string>
+    <string name="text_save_card">Save this card</string>
+    <string name="text_save_card_description">Save this card and you won’t have to enter these
+        details again!
+    </string>
+    <string name="text_payment_success">Thank You! Payment Successful</string>
+    <string name="text_payment_failure">Payment Failure</string>
+    <string name="text_transaction_id">Your Order ID</string>
+    <string name="text_error_transaction_id">Error ID</string>
+    <string name="text_amount_paid">Amount Paid</string>
+    <string name="text_error_message">Error Message</string>
+    <string name="text_wallet_switch">
+        <![CDATA[You can try our wallet for cashless payments & get exciting offers]]></string>
+    <string name="thanks_text">Thank you for using Citrus checkout.</string>
+    <string name="text_go_to_my_wallet">GO TO MY WALLET</string>
+    <string name="text_retry_transaction">Retry Transaction</string>
+    <string name="text_dismiss">Dismiss</string>
+    <string name="text_error">PAYMENT FAILED</string>
+    <string name="text_all_done">CONFIRMED</string>
+    <string name="text_make_payment">Make Payment</string>
+    <string name="app_title">Citrus Pay SDK UI</string>
+    <string name="text_credit_card">Credit Card</string>
+    <string name="text_debit_card">Debit Card</string>
+    <string name="err_card_no_empty">Please enter card number.</string>
+    <string name="err_owner_name_empty">Please enter card owner name.</string>
+    <string name="err_select_month">Please select an expiry month.</string>
+    <string name="err_select_month_future">Please select an expiry month in the future.</string>
+    <string name="err_select_year">Please select an expiry year</string>
+    <string name="text_bank_list">Net banking options</string>
+    <string name="text_getting_bank_list">Loading bank list&#8230;</string>
+    <string name="text_saving_card">Saving your card&#8230;</string>
+    <string name="text_wallet_signin">
+        <![CDATA[Go Cashless with Citrus & Make Payments in a Jiffy!]]></string>
+    <string name="hint_email">EMAIL ADDRESS</string>
+    <string name="hint_phone_no">PHONE NUMBER</string>
+    <string name="text_get_started">GET STARTED</string>
+    <string name="text_my_wallet">My Wallet</string>
+    <string name="ok_got_it">OK, GOT IT!</string>
+    <string name="text_login_dialog_title">Already have a Citrus account?</string>
+    <string name="text_login_dialog_message">If you already have a Citrus account, then enter
+        registered details&#8230;
+    </string>
+    <string name="text_mobile_match_found">Congratulations, we have found a Citrus account which
+        matches this mobile number
+    </string>
+    <string name="text_email_match_found">Citrus account matching this email address found
+    </string>
+    <string name="text_enter_otp_mobile">Please enter the OTP that you have received on this mobile
+        number
+    </string>
+    <string name="hint_mobile_otp">MOBILE OTP</string>
+    <string name="text_resend_otp">RE-SEND OTP</string>
+    <string name="text_otp_auto_populated">We have auto-populated your OTP</string>
+    <string name="hint_email_otp">EMAIL OTP</string>
+    <string name="hint_citrus_pass">ENTER CITRUS PASSWORD</string>
+    <string name="text_email_otp_sent">An email OTP has been sent to</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="text_or">OR</string>
+    <string name="text_signup_confirm">We are creating a Citrus account for you with the following
+        details
+    </string>
+    <string name="text_change">CHANGE</string>
+    <string name="text_sign_up">Sign Up</string>
+    <string name="text_verify_mobile">If you would like to verify your mobile number, please enter
+        the OTP that we have sent to your mobile :
+    </string>
+    <string name="text_verify">Verify</string>
+    <string name="text_i">i</string>
+    <string name="text_add_money">Add money</string>
+    <string name="text_transaction_history">Transaction History</string>
+    <string name="text_withdraw_money">Withdraw Money</string>
+    <string name="text_manage_saved_cards">Manage Saved Cards</string>
+    <string name="text_FAQ">FAQs</string>
+    <string name="text_add_money_wallet">Add money to your wallet</string>
+    <string name="hint_enter_amount">Enter amount</string>
+    <string name="plus_100">+100</string>
+    <string name="plus_500">+500</string>
+    <string name="plus_1000">+1000</string>
+    <string name="title_activity_login_flow">LoginFlowActivity</string>
+    <string name="err_enter_password">Please enter password first.</string>
+    <string name="text_show_more">Show More</string>
+    <string name="text_show_less">Show Less</string>
+    <string name="valid_amount_msg">Please enter valid amount</string>
+    <string name="excess_amount_msg">Amount cannot be greater than INR.5000 or less than INR. 1</string>
+    <string name="less_amount_msg">Amount to be added to wallet must not be less than the pay
+        amount.
+    </string>
+    <string name="text_my_banks">My Banks</string>
+    <string name="text_no_saved_cards">You have no saved Cards.</string>
+    <string name="text_manage_cards">Manage Cards</string>
+    <string name="err_card_no">Card number you entered is not correct.</string>
+    <string name="string_alphabets_with_space">"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+        "
+    </string>
+    <string name="string_alphanumeric">
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    </string>
+    <string name="number_digits">0123456789</string>
+    <string name="bank_caution">Our system is seeing an increased failure rate with this bank. Tread
+        with caution&#8230;
+    </string>
+    <string name="hint_account_holder_name">Account Holder Name</string>
+    <string name="hint_account_number">Account Number</string>
+    <string name="hint_ifsc_code">IFSC Code</string>
+    <string name="err_account_holder_name_empty">Please enter Account holder name.</string>
+    <string name="err_account_number_empty">Please enter your account number.</string>
+    <string name="err_ifsc_code_empty">Please enter the IFSC code of your bank.</string>
+    <string name="err_ifsc_code_wrong">Please enter correct IFSC code.</string>
+    <string name="text_withdraw_success">Withdrawal In Progress</string>
+    <string name="text_withdraw_failure">Withdrawal Failure</string>
+    <string name="text_withdraw_success_message">
+        <a href="http://www.citruspay.com/citruscashfaqs-lite.html#Withdrawals">More Info about
+            withdrawals.
+        </a>
+    </string>
+    <string name="getting_account_info">Getting account info&#8230;</string>
+    <string name="text_saved_options">My Saved Options</string>
+    <string name="err_invalid_card">The card number you entered is invalid.</string>
+    <string name="transaction_complete">Your trasaction has been completed, please start a fresh
+        transaction.
+    </string>
+    <string name="err_email_empty">Please enter a valid Email</string>
+    <string name="err_phone_empty">Please enter a valid phone no.</string>
+    <string name="err_amount_empty">Please enter a valid non zero amount</string>
+    <string name="text_select_bank">SELECT A BANK</string>
+    <string name="text_balance">balance</string>
+    <string name="text_searching_user">Searching User&#8230;</string>
+    <string name="hint_create_citrus_pass">CREATE CITRUS PASSWORD</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="load_wallet_balance">Getting wallet balance&#8230;</string>
+    <string name="load_wallet_details">Getting wallet details&#8230;</string>
+    <string name="loading_saved_cards">Loading saved cards&#8230;</string>
+    <string name="deleting_cards">Deleting Cards&#8230;</string>
+    <string name="saving_account_info">Saving&#8230;</string>
+    <string name="text_signing_in">Signing In&#8230;</string>
+    <string name="text_signing_up">Signing Up&#8230;</string>
+    <string name="linking_user">Loading please wait&#8230;</string>
+    <string name="text_add">Add</string>
+    <string name="text_pay_with_net_banking">Pay with Net Banking</string>
+    <string name="text_forgot_password">Forgot Password ?</string>
+    <string name="text_processing">Processing&#8230;</string>
+    <string name="text_password_reset_link">A password reset link has been sent to you on %1$s, please
+        login to your email account and reset your password.
+    </string>
+    <string name="text_password_reset_title">Password Reset</string>
+    <string name="err_mismatch_password">Username Password mismatch</string>
+    <string name="text_add_more_money">Please add more money to the wallet</string>
+
+    <!--Google Analytics -->
+    <string name="toast_track_exception">Exception is recorded. Check the Crashes and Exceptions on Google Dashboard!</string>
+    <string name="toast_app_crash">The app will crash now! Check the Crashes and Exceptions on Google Dashboard!</string>
+    <string name="fragment_footer">Fragment is loaded! Check the screen view on Google Analytics Dashboard.</string>
+    <string name="msg_instructions">Click on each button to see the appropriate tracking on Google Analytics</string>
+    <string name="btn_second_screen">Second Screen</string>
+    <string name="btn_send_event">Track Event</string>
+    <string name="btn_exception_tracking">Track Exception</string>
+    <string name="btn_app_crash">Track App Crash</string>
+    <string name="btn_load_fragment">Fragment Tracking</string>
+
+    <!--Events-->
+    <string name="tab_sports">SPORTS</string>
+    <string name="tab_participate">PARTICIPATE</string>
+    <string name="tab_sports_cafe">SPORTSCAFE.IN</string>
+
+    <string name="home">HOME</string>
+    <string name="nav_item_My_bookings">MY BOOKINGS</string>
+    <string name="nav_item_Refferal">INVITE FRIENDS</string>
+    <string name="nav_item_Plycer_Credits">PLAYCER CREDITS</string>
+    <string name="nav_item_contact_us">EMAIL</string>
+    <string name="nav_item_whatsapp">WHATSAPP</string>
+    <string name="nav_item_share">SHARE THIS APP</string>
+    <string name="nav_item_rate">RATE THIS APP</string>
+
+    <string name="colors">Colors</string>
+    <string name="photo_data">Photo data</string>
+
+    <string name="identifier">Identifier</string>
+    <string name="owner">Owner</string>
+    <string name="secret">Secret</string>
+    <string name="server">Server id</string>
+    <string name="title">Title</string>
+    <string name="is_public">Public photo</string>
+    <string name="is_friend">Friend\'s photo</string>
+    <string name="is_family">Family\'s photo</string>
+    <string name="pallete">Color palette</string>
+
+    <string name="version_prefix">V</string>
+    <string name="coming_soon">Coming soon :)</string>
+    <string name="not_supported">Your phone is not supported :(</string>
+    <string name="copyed">Copied!</string>
+
+    <!--Coupon Code-->
+    <string name="have_coupon_code">Have a Coupon Code?</string>
+    <string name="coupon_code">Enter Coupon Code</string>
+    <string name="submit">Apply</string>
+    <string name="terms">*<u>Terms and Conditions apply</u>.</string>
+
+    <!--Invite Page-->
+    <string name="share_invite">SHARE YOUR INVITE CODE</string>
+    <string name="refereal_code">CHHARI7</string>
+    <!-- <string name="send_friends_worth">Send friends Playcer and you'll get one too, worth  50 More Details</string>-->
+    <string name="invite_frds">INVITE FRIENDS</string>
+    <!--<string name="credit_info">       Playcer credits are best owned upon the best friends of Playcer. For example, you earn it when you refer Playcer to a friend. You can use this Credits to pay for booking for slots.</string>-->
+    <string name="credit_info">Playcer Credits are owned by the best friends of Playcer. Earn them by inviting your friends. You can use these credits to pay when you book slots.</string>
+
+    <string name="invitation_text">Invite your friends with the code, they will get credits worth Rs. 50 on signing up. Also, you will also get credits worth Rs. 50 which you can use to pay next time you play. <u>More Details</u>.</string>
+    <string name="more_details"><u>More Details</u></string>
+
+    <string name="enter_coupon">Enter Coupon Code</string>
+
+
+    <!-- Newly Refine Code Strings - Start -->
+    <string name="cart_empty">Cart is empty!</string>
+    <string name="your_cart_empty">Your cart is empty!</string>
+    <string name="checkout">CHECKOUT</string>
+    <string name="choose_city">Choose City</string>
+    <string name="no_clubs_avail">No Clubs Available!</string>
+
+    <string name="sry_for_delay">SORRY FOR THE DELAY</string>
+    <string name="we_had_pblm_connt">We had some trouble connecting.</string>
+    <string name="ticket">Ticket</string>
+    <string name="subtitle">Subtitle here Subtitle here</string>
+
+    <string name="username">User Name</string>
+    <string name="mblno">+91 99********7</string>
+    <string name="pick_venue">Pick Venue</string>
+    <string name="sub_total">SUB TOTAL</string>
+    <string name="rupee">\u20B9 0</string>
+    <string name="sports_list_here">Sports List Here!</string>
+    <string name="sports_unavail">Sports unavailable!</string>
+
+    <string name="booking_confirm">Your booking is confirmed.</string>
+    <string name="ex">XXXXX</string>
+    <string name="orderid">000000</string>
+    <string name="orderAmount">1200.00</string>
+
+    <string name="citrus_mbl_no">+91 - 9595257150</string>
+    <string name="citrus_email_id">akshay@leftshift.io</string>
+
+    <string name="loading">Loading...</string>
+    <string name="some">...</string>
+    <string name="amount">250</string>
+    <string name="dede">DDDDDDD</string>
+    <string name="six">06:00</string>
+    <string name="could_not">Could not find any slots!</string>
+
+    <string name="card_name">Credit Card – State Bank Of India</string>
+    <string name="book_summery">Booking Summary</string>
+
+
+    <string name="update">UPDATE</string>
+    <string name="later">LATER</string>
+    <string name="taxes">TAXES</string>
+    <string name="total">TOTAL</string>
+    <string name="no_bookings">No Bookings!</string>
+    <string name="payment_gate_way_coming_soon">Payment Gateway Coming Here!</string>
+
+    <string name="events_unavail">Events unavailable!</string>
+    <string name="we_need_mbl">We need your mobile number to book slots and keep you updated on booking status.</string>
+
+    <string name="country_prefix_code">+91</string>
+    <string name="enter_mbl_no">Enter Mobile Number</string>
+    <string name="pls_enter_mbl_no">Please enter your mobile number</string>
+
+    <string name="card_no">XXXX XXXX XXXX 8001</string>
+    <string name="card_holder_name">CARD HOLDER NAME</string>
+    <string name="exp_date">09/15</string>
+
+    <string name="use_credits">Use Credits Balance</string>
+    <string name="avail_credits">Total available credits: 0</string>
+    <string name="zero">0</string>
+
+    <string name="sub_total_amount">SUB TOTAL</string>
+    <string name="playcer_credits">PLAYCER CREDITS</string>
+    <string name="coupon_amount">COUPON AMOUNT</string>
+    <string name="convience_fee">convenience fee</string>
+
+    <string name="thanks_enter_otp">Thanks ! Please enter the OTP</string>
+    <string name="we_have_sent_otp">We have sent an OTP via SMS to </string>
+    <string name="enter_otp">Enter OTP</string>
+
+    <string name="no_slots_avail">No slots available!</string>
+    <string name="pay_amount">Pay Amount</string>
+    <string name="procced_to_pay">PROCEED TO PAY</string>
+    <string name="your_bal">Your Balance</string>
+    <string name="one_play_cred">1 Playcer Credits = ₹ 1</string>
+    <string name="addcart">ADD TO CART</string>
+    <string name="confirm">Confirm</string>
+    <string name="thankyou">Thank You!</string>
+    <string name="booking_id">Booking ID</string>
+    <string name="zero_amount">00000</string>
+
+
+    <string name="register">REGISTER</string>
+    <string name="your_in">You\'re in<b> </b></string>
+
+    <string name="pls_enter_valid_coupon">Please Enter Valid Coupon Code</string>
+    <string name="pls_enter_coupon_code">Please Enter Coupon Code</string>
+
+
+    <string name="sorry_dont_have_credits">Sorry! You Don\'t have credit balance.</string>
+    <string name="invalid_no">Invalid Number!</string>
+    <string name="invalid_email">Invalid email!</string>
+    <string name="all_fields_mandatory">All fields are mandatory!</string>
+
+    <string name="invalid_coupon">Invalid Coupon !</string>
+    <string name="coupon_not_applicable">Coupon Not applicable !</string>
+    <string name="coupon_expire">Coupon expired!.</string>
+
+    <string name="your_session_expire">Your session expired!</string>
+    <string name="whatsapp_not_found">WhatsApp not found!</string>
+    <string name="pblm_to_open_whatsapp">Problem to opening \'WhatsApp\'!</string>
+
+    <string name="there_is_no_email">There is no email client installed.</string>
+    <string name="pls_select_city">Please select city!</string>
+
+    <string name="sorry_didnt_apply">Sorry! Didn\'t apply credits for this transaction.</string>
+    <string name="sorry_your_credits_less">Sorry! Your credits are less than cart amount.</string>
+    <string name="add_to_cart">Added to cart!</string>
+    <string name="already_added_slot">Already 1 free slot has been added in your cart!</string>
+    <string name="removed_cart">Removed from cart!</string>
+    <string name="sorry_slot_unavail">Sorry! Slot Unavailable.</string>
+    <string name="under_constrution">Under Construction...</string>
+    <string name="monile_no_mandatory">Mobile number is mandatory</string>
+    <string name="otp_must_not_empty">OTP must not be empty!</string>
+    <string name="pls_enter_mbl_no_for_otp">Please enter mobile number for OTP!</string>
+    <string name="user_does_not_exists">User does not exists.</string>
+    <string name="invalid_otp">Invalid OTP!</string>
+    <string name="username_already_exists">Username already exists.</string>
+    <string name="mobile_no_must_not_empty">Mobile number must not be empty!</string>
+
+    <!-- Internet Related Error Messages -->
+    <string name="pls_connect_internet">Please connect your Internet!</string>
+    <string name="request_failed">Request failed! Please try again.</string>
+    <string name="no_internet_conn">No Internet Connection !</string>
+    <string name="try_again">TRY AGAIN</string>
+
+    <!-- Server Response Error Messages -->
+    <string name="request_not_found">Requested resource not found</string>
+    <string name="some_went_wrong">Something went wrong at server end</string>
+    <string name="unexpected_error">Unexpected Error occurred! Try again.</string>
+
+    <!-- Newly Refine Code Strings - End -->
+
+</resources>

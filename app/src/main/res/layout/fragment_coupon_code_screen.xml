@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/couponCodeLVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobileTVID"
+                android:background="@drawable/edittextbackground"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/couponcodeETID"
+                    style="@style/text_editbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/verifyBtnID"
+                    android:background="@drawable/edit_text_bottom_border"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="@string/coupon_code"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapCharacters"
+                    android:singleLine="true"
+                    android:textAllCaps="true"
+                    android:textColor="#333333" />
+
+                <Button
+                    android:id="@+id/applyBtnID"
+                    android:layout_width="48dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/arrow_done"
+                    android:gravity="center_horizontal|center_vertical" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/haveCouponTVID"
+                style="@style/headerTitle_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:text="@string/terms"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cancelLVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/appliedBtnID"
+                android:layout_width="200dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonbackground"
+                android:text="APPLIED"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cancelBtnID"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/delete" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <in.playcer.libs.ProgressWheel
+        android:id="@+id/progress_wheel1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        wheel:matProg_barColor="@color/colorPrimary"
+        wheel:matProg_progressIndeterminate="true" />
+
+</RelativeLayout>
+

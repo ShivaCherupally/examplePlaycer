@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headerMainRLID"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerMainRLID"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/subRelRID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/whitebg">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border">
+
+                <RelativeLayout
+                    android:id="@+id/proccedBtnID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/coinsIVID"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/coins"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/headerTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/coinsIVID"
+                        android:paddingLeft="10dp"
+                        android:text="@string/your_bal"
+                        android:textColor="#333"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/textRLID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/proccedBtnID"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/walletBalanceTVID"
+                        style="@style/headerTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        android:textColor="#333"
+                        android:textSize="65sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/creditsRLID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textRLID"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        style="@style/headerTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/one_play_cred"
+                        android:textColor="#333"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/creditssRLID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subRelRID"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:paddingLeft="5dp">
+
+            <TextView
+                style="@style/headerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credit_info"
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="144dp"
+    android:background="@color/colorPrimary"
+    android:paddingTop="30dp"
+    android:paddingBottom="@dimen/spacing"
+    android:paddingRight="@dimen/spacing"
+    android:paddingLeft="@dimen/spacing">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical">
+
+       <!--<de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/color_pallete"
+            android:layout_height="@dimen/color_pallete"
+            android:src="@drawable/img_dora"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textColor="@color/white"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/text_large" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mblno"
+                android:layout_margin="1dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/userName"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:id="@+id/clubNameTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MANAGER"
+                android:layout_margin="1dp"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:layout_below="@+id/number"
+                android:textSize="@dimen/text_medium" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

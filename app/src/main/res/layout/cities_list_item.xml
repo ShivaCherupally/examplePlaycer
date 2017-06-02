@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/checkBox1"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"/>
+
+</RelativeLayout>

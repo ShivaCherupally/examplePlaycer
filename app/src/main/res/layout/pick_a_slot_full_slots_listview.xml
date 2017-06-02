@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+    <!--<include layout="@layout/toolbar" />-->
+    <include layout="@layout/header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerID" >
+
+    <HorizontalScrollView
+        android:id="@+id/hsMenuMainHSID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dates_bg_color">
+
+        <LinearLayout
+            android:id="@+id/menuMainLLID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:background="@color/dates_bg_color"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/hsMenuMainHSID"
+        android:background="#282828" />
+
+        <ListView
+            android:id="@+id/sportDetailsLVID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:paddingTop="0dp"
+            android:smoothScrollbar="true" />
+        <!--android:scrollingCache="false"
+        android:animationCache="false"-->
+
+        <in.playcer.libs.ProgressWheel
+            android:id="@+id/progress_wheel1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            wheel:matProg_barColor="#5588FF"
+            wheel:matProg_progressIndeterminate="true" />
+
+        <TextView
+            style="@style/headerTitle"
+            android:id="@+id/noSlotsAvailableTVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:visibility="gone"
+            android:text="@string/no_slots_avail"/>
+
+        <include layout="@layout/dialog_layout_no_network"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

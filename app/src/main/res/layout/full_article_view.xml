@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <!--<com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:visibility="gone" />-->
+
+    <include layout="@layout/dialog_layout_no_network"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/articleImageIVID"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fcfcfc"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/titleSCTVID"
+                    style="@style/headerTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text="@string/loading"
+                    android:textColor="#000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#D3D3D3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <WebView
+                        android:id="@+id/poweredbyWVID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:id="@+id/lineWVID"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#333"/>
+
+                    <WebView
+                        android:id="@+id/detailsTVID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

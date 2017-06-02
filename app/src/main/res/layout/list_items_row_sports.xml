@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sportsCardCVID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sportsCardCVID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="@dimen/card_corner_radius"
+        card_view:cardElevation="@dimen/card_elevation">-->
+
+    <FrameLayout
+        android:id="@+id/sportsCardFrameFLID"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/sportImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/placeholder"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/mainHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:selectableItemBackground"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/placeNameHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sportNameTVID"
+                style="@style/sports_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/my_grediant"
+                android:gravity="left"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="8dp"
+                android:text=""
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

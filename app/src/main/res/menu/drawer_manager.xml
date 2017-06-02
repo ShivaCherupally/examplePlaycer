@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DashboardActivity">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@drawable/menu_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_bookings"
+            android:icon="@drawable/menu_booking"
+            android:title="@string/nav_item_My_bookings" />
+        <item
+            android:id="@+id/nav_email"
+            android:icon="@drawable/menu_email"
+            android:title="@string/nav_item_contact_us" />
+        <item
+            android:id="@+id/nav_whatsapp"
+            android:icon="@drawable/menu_whatsapp"
+            android:title="@string/nav_item_whatsapp" />
+        <item
+            android:id="@+id/nav_share_app"
+            android:icon="@drawable/menu_share"
+            android:title="@string/nav_item_share" />
+        <item
+            android:id="@+id/nav_rate_app"
+            android:icon="@drawable/menu_rate"
+            android:title="@string/nav_item_rate" />
+    </group>
+</menu>

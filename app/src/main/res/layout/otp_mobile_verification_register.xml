@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentPanelRLID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80F9F9F9">
+
+    <include
+        android:id="@+id/toolbarVVID"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="2dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <RelativeLayout
+            android:id="@+id/registrationRLID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/enterTVID"
+                style="@style/slots_times_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="@string/thanks_enter_otp"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mobileTVID"
+                style="@style/headerTitle_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enterTVID"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/we_have_sent_otp"
+                android:textColor="#808080" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobileTVID"
+                android:background="#FFF"
+                android:padding="5dp"
+                android:layout_marginTop="20dp">
+
+                    <EditText
+                        android:id="@+id/phoneNumETID"
+                        style="@style/text_editbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_toLeftOf="@+id/verifyBtnID"
+                        android:background="@drawable/edit_text_bottom_border"
+                        android:ems="10"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:hint="@string/enter_otp"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textColor="#333333" />
+
+                    <Button
+                        android:id="@+id/verifyBtnID"
+                        android:layout_width="48dp"
+                        android:layout_height="44dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/arrow_done"
+                        android:gravity="center_horizontal|center_vertical" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

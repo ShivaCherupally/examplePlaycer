@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:isScrollContainer="false"
+    android:overScrollMode="never"
+    tools:context="in.playcer.ui.fragments.SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/citrus_app_background_color"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_shadow_bg"
+            android:padding="@dimen/dp16">
+
+            <TextView
+                android:id="@+id/confirm_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_signup_confirm"
+                android:textColor="@color/citrus_text_color"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/credential_change_button"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/confirm_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/selector_button_secondary"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp"
+                android:text="@string/text_change"
+                android:textColor="@color/citrus_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mobile_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/confirm_text"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@id/credential_change_button"
+                android:text="@string/citrus_mbl_no"
+                android:textColor="@color/citrus_text_color_light"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mobile_text"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@id/credential_change_button"
+                android:text="@string/citrus_email_id"
+                android:textColor="@color/citrus_text_color_light"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <!--<include layout="@layout/layout_otp_password"
+                 android:id="@+id/otp_password_container"/>-->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp8"
+            android:background="@drawable/citrus_card_background"
+            android:orientation="vertical"
+            android:padding="@dimen/dp16">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/citrus_pass_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp10"
+                    android:drawableRight="@drawable/ic_visibility_on"
+                    android:hint="@string/hint_create_citrus_pass"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/citrus_text_color"
+                    android:textColorHint="@color/citrus_label_color"
+                    android:textSize="17sp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:padding="16dp">
+
+            <in.playcer.ui.widgets.CitrusButton
+                android:id="@+id/button_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp56"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/dp15"
+                android:text="@string/text_sign_up"
+                android:textAllCaps="true"
+                android:textColor="@color/citrus_white"
+                android:textSize="14sp"
+                app:textStyle="@integer/OPENSANS_REGULAR" />
+
+            <TextView
+                android:id="@+id/terms_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/button_sign_up"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp10"
+                android:background="@drawable/selector_transparent_surface"
+                android:duplicateParentState="false"
+                android:padding="@dimen/dp10"
+                android:text="@string/terms_and_conditions"
+                android:textColor="@color/citrus_text_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/slotConfirmCardCVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"
+            android:background="#F9F9F9"
+            android:visibility="gone">
+
+            <!--<android.support.v7.widget.CardView
+                android:id="@+id/slotConfirmCardCVID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                card_view:cardBackgroundColor="#F9F9F9"
+                card_view:cardCornerRadius="@dimen/card_corner_radius"
+                android:visibility="gone"
+                card_view:cardElevation="@dimen/card_elevation">-->
+
+            <FrameLayout
+                android:id="@+id/sportsCardFrameFLID"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:id="@+id/mainHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/NameHolder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/clubNameTVID"
+                                style="@style/headerTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="left"
+                                android:text="SECUNDERABAD CLUB"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="#333333" />
+
+                            <TextView
+                                android:id="@+id/sportNameTVID"
+                                style="@style/headerTitle_small"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="left"
+                                android:text="Badminton Court"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="#333333" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="bottom"
+                                android:gravity="bottom"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/pickeddateTVID"
+                                    style="@style/headerTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sep 14, 2015"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+
+                                <TextView
+                                    android:id="@+id/PickedSlotTimeTVID"
+                                    style="@style/headerTitle_small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="12:00 PM"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="3dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/locationTVID"
+                                    style="@style/headerTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="PATNY CENTER"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+
+                                <TextView
+                                    android:id="@+id/cityTVID"
+                                    style="@style/headerTitle_small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="SECUNDERABAD"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/registrationRLID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/unameETID"
+                style="@style/text_editbox"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_bottom_block_border"
+                android:ems="10"
+                android:hint="@string/reg_Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColor="#333333" />
+
+            <EditText
+                android:id="@+id/eemailETID"
+                style="@style/text_editbox"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/unameETID"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_bottom_block_border"
+                android:ems="10"
+                android:hint="@string/reg_email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLength="100"
+                android:singleLine="true"
+                android:textColor="#333333" />
+            <!-- android:drawableLeft="@drawable/email_icon" -->
+
+            <EditText
+                android:id="@+id/phoneNumETID"
+                style="@style/text_editbox"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/eemailETID"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_bottom_block_border"
+                android:ems="10"
+                android:hint="@string/reg_phone"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="#333333" />
+
+            <Button
+                android:id="@+id/confirmBtnID"
+                style="@style/headerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneNumETID"
+                android:layout_marginTop="20dp"
+                android:background="#4CAF50"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/confirm"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/citiesSelectionRelativeRLID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/chooseCityRLID"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/chooseCityTVID"
+            style="@style/headerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/choose_city"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/currentCityTVID"
+            style="@style/headerTitle_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chooseCityTVID"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+    <View
+        style="@style/headerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:divider="#000"
+        android:dividerHeight="0.5dp"
+        android:gravity="center_vertical" />
+</LinearLayout>

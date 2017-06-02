@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainRVID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headerRLIDd"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:id="@+id/middleRVIdD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerRLIDd"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/personImageIVID"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/invite" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personImageIVID"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shareTVID"
+                    style="@style/headerTitle_small"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="@string/share_invite"
+                    android:textColor="#A9A9A9"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/referralCodeTVID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/entertistle"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textAllCaps="true"
+                    android:singleLine="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/moreinfoTVID"
+                    style="@style/headerTitle_sub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/entertistle"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/invitation_text"
+                    android:textColor="#333"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/inviteBtnID"
+            style="@style/button_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="3dp"
+            android:background="#333333"
+            android:gravity="center"
+            android:text="@string/invite_frds"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

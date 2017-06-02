@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "D:\\Playstore_Updated_code\\Playcer\\citruslibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 64,
+                    "endOffset": 115
+                },
+                "from": {
+                    "file": "D:\\Playstore_Updated_code\\Playcer\\citruslibrary\\build\\intermediates\\bundles\\debug\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 64,
+                        "endOffset": 115
+                    }
+                }
+            }
+        ]
+    }
+]

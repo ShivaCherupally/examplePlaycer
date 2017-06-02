@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/aboutScrollRLID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/aboutAppWVID"
+        style="@style/helpPage_Text_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"/>
+
+    <in.playcer.libs.ProgressWheel
+        android:id="@+id/progress_wheel1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_horizontal"
+        wheel:matProg_barColor="#5588FF"
+        wheel:matProg_progressIndeterminate="true" />
+
+    <TextView
+        android:id="@+id/aboutAppTVID"
+        style="@style/helpPage_Text_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        android:lineSpacingExtra="5dp"
+        android:text="sadjlkfjsdlkajfsdlkjflksjlksjfslkjfdslkjdflksdjdsflkjdfslkjflksjlksjdfljdsljfkjkjk" />
+
+    <include layout="@layout/dialog_layout_no_network"/>
+
+</RelativeLayout>

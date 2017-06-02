@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="3dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/sportsCardCVID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="#F9F9F9"
+        android:layout_marginTop="3dp">
+        <!--<android.support.v7.widget.CardView
+            android:id="@+id/sportsCardCVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="3dp"
+            card_view:cardBackgroundColor="#F9F9F9"
+            card_view:cardCornerRadius="@dimen/card_corner_radius"
+            card_view:cardElevation="@dimen/card_elevation">-->
+
+        <FrameLayout
+            android:id="@+id/sportsCardFrameFLID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/mainHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/NameHolder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toLeftOf="@+id/byManagerRLID"
+                        android:orientation="vertical"
+                        android:transitionName="tNameHolder">
+
+                        <TextView
+                            android:id="@+id/bookedIDTVID"
+                            style="@style/headerTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:text="@string/dede"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#333333" />
+
+                        <TextView
+                            android:id="@+id/bookedDateTVID"
+                            style="@style/headerTitle_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:text="@string/ex"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/byManagerRLID"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/byManagerBtnID"
+                            style="@style/headerTitle_small"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/bookingTotalTVID"
+                            android:background="@drawable/user"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/bookingTotalTVID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:text="250"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

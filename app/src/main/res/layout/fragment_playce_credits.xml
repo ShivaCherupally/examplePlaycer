@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/coins"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/playcerCreditsValueTVID"
+                style="@style/headerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="4dp"
+                android:text="@string/zero"
+                android:textColor="#333"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:id="@+id/playcerCreditsRLID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/creditCHID"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/city_untick" />
+
+                <TextView
+                    style="@style/headerTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/creditCHID"
+                    android:singleLine="true"
+                    android:text="@string/use_credits"
+                    android:textColor="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/totalCreditsTVID"
+            style="@style/headerTitle_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/llll"
+            android:singleLine="true"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/avail_credits"
+            android:textColor="@color/colorPrimary" />
+
+        <in.playcer.libs.ProgressWheel
+            android:id="@+id/progress_wheel1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:visibility="gone"
+            wheel:matProg_barColor="@color/colorPrimary"
+            wheel:matProg_progressIndeterminate="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

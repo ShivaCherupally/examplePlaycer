@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+    <include
+        android:id="@+id/headerMainRLID"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:id="@+id/listCartsRLID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerMainRLID">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/checkOutBtnID"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/slotConfirmCard2CVID">
+
+                <ListView
+                    android:id="@+id/cartListViewLVID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:animationCache="false"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#00000000"
+                    android:scrollingCache="false"
+                    android:smoothScrollbar="true" />
+
+                <in.playcer.libs.ProgressWheel
+                    android:id="@+id/progress_wheel1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    wheel:matProg_barColor="@color/colorPrimary"
+                    wheel:matProg_progressIndeterminate="true" />
+
+                <TextView
+                    android:id="@+id/noCartListAvailableTVID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/cart_empty"
+                    android:textColor="@color/all_textColor"
+                    android:textSize="39sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/slotConfirmCard2CVID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/sportsCardFrame2FLID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/mainHolder3"
+                        android:background="?android:selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/mainHolder2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/mainHolder3"
+                                android:background="?android:selectableItemBackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/slotPriceAmountLabelTVID"
+                                    style="@style/headerTitle_sub"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="left"
+                                    android:singleLine="true"
+                                    android:text="SUB TOTAL"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/mainHolder3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="?android:selectableItemBackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/slotPriceAmountTVID"
+                                    style="@style/headerTitle_sub"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:gravity="right|center_vertical"
+                                    android:singleLine="true"
+                                    android:text="\u20B9 0"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/feeLableRLID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="4dp"
+                            android:orientation="vertical"
+                            android:transitionName="tNameHolder">
+
+                            <LinearLayout
+                                android:id="@+id/mainHolder33"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/mainHolder333"
+                                android:background="?android:selectableItemBackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/feeAmountLabelTVID"
+                                    style="@style/headerTitle_sub"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="left"
+                                    android:singleLine="true"
+                                    android:text="TAXES"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/mainHolder333"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="?android:selectableItemBackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/feeAmountTVID"
+                                    style="@style/headerTitle_sub"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:text="\u20B9 0"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#FF5050" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/viewLineTVID"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@color/grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/coupanRLID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:transitionName="tNameHolder"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:id="@+id/mainHolder34"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/deleteCouponRLID"
+                                android:background="?android:selectableItemBackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/haveCouponTVID"
+                                    style="@style/headerTitle_sub"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@drawable/textlines"
+                                    android:gravity="left"
+                                    android:singleLine="true"
+                                    android:text="@string/have_coupon_code"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/deleteCouponRLID"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical">
+
+                                <Button
+                                    android:id="@+id/deleteCouponBtnID"
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/delete" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/totalLableRLID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="vertical"
+                            android:transitionName="tNameHolder">
+
+                            <LinearLayout
+                                android:id="@+id/mainHolder44"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/mainHolder444"
+                                android:background="?android:selectableItemBackground"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/totalAmountLabelTVID"
+                                    style="@style/headerTitle_sub"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:text="TOTAL"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/mainHolder444"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="?android:selectableItemBackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/totalAmountTVID"
+                                    style="@style/headerTitle_sub"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="right|center_vertical"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/checkOutBtnID"
+            style="@style/headerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:background="#4CAF50"
+            android:gravity="center"
+            android:text="@string/checkout"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <include layout="@layout/dialog_layout_no_network" />
+</RelativeLayout>

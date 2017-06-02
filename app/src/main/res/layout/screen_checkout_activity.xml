@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/showUnshowRLID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+    <include
+        android:id="@+id/headerMainRLID"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerMainRLID">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/proccedBtnID"
+            android:layout_margin="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/slotConfirmCard2CVID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/white">
+
+                    <!--<android.support.v7.widget.CardView
+                        android:id="@+id/slotConfirmCard2CVID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/white"
+                        android:foregroundGravity="center"
+                        card_view:cardBackgroundColor="@color/white"
+                        card_view:cardCornerRadius="@dimen/card_corner_radius"
+                        card_view:cardElevation="@dimen/card_elevation">-->
+
+                        <FrameLayout
+                            android:id="@+id/sportsCardFrame2FLID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/mainHolder3"
+                                android:background="?android:selectableItemBackground"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="vertical"
+                                    android:transitionName="tNameHolder">
+
+                                    <LinearLayout
+                                        android:id="@+id/mainHolder2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/mainHolder3"
+                                        android:background="?android:selectableItemBackground"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/slotPriceAmountLabelTVID"
+                                            style="@style/headerTitle_sub"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:gravity="left"
+                                            android:textAllCaps="true"
+                                            android:singleLine="true"
+                                            android:text="@string/sub_total_amount"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:textColor="#333333" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/mainHolder3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="?android:selectableItemBackground"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/cartAmountTVID"
+                                            style="@style/headerTitle_sub"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="right|center_vertical"
+                                            android:gravity="right|center_vertical"
+                                            android:singleLine="true"
+                                            android:text="@string/rupee"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:textColor="#333333" />
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:id="@+id/couponDividerVID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.7dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@color/black"
+                                    android:visibility="gone" />
+
+                                <RelativeLayout
+                                    android:id="@+id/couponCodeRLID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:layout_marginTop="2dp"
+                                    android:orientation="vertical"
+                                    android:transitionName="tNameHolder"
+                                    android:visibility="gone">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/couponHolder33"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/cupoanAmount333"
+                                        android:background="?android:selectableItemBackground"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/couponAmountlTVID"
+                                            style="@style/headerTitle_sub"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:gravity="left"
+                                            android:textAllCaps="true"
+                                            android:singleLine="true"
+                                            android:text="Coupon Amount"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:textColor="#333333" />
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/cupoanAmount333"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="?android:selectableItemBackground"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/couponAmountTVID"
+                                            style="@style/headerTitle_sub"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="right|center_vertical"
+                                            android:gravity="right|center_vertical"
+                                            android:singleLine="true"
+                                            android:textAllCaps="true"
+                                            android:text="\u20B9 0"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:textColor="#4CAF50" />
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:id="@+id/creditDividerVID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.7dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:layout_marginTop="8dp"
+                                    android:visibility="gone"
+                                    android:background="@color/black" />
+
+
+                                <RelativeLayout
+                                    android:id="@+id/creditsRLID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:visibility="gone"
+                                    android:layout_marginTop="2dp"
+                                    android:orientation="vertical"
+                                    android:transitionName="tNameHolder">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/credits33"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/credits333"
+                                        android:background="?android:selectableItemBackground"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/creditsTVID"
+                                            style="@style/headerTitle_sub"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:gravity="left"
+                                            android:singleLine="true"
+                                            android:textAllCaps="true"
+                                            android:text="CREDITS AMOUNT"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:textColor="#333333" />
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/credits333"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="?android:selectableItemBackground"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/creditsAmountTVID"
+                                            style="@style/headerTitle_sub"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="right|center_vertical"
+                                            android:gravity="right|center_vertical"
+                                            android:singleLine="true"
+                                            android:text="\u20B9 0"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:textColor="#4CAF50" />
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:id="@+id/viewLisneTVIDneTVID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.7dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@color/black" />
+
+
+                                <RelativeLayout
+                                    android:id="@+id/feeLableRLID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:layout_marginTop="2dp"
+                                    android:orientation="vertical"
+                                    android:transitionName="tNameHolder">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/mainHolder33"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/mainHolder333"
+                                        android:background="?android:selectableItemBackground"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/feeAmountLabelTVID"
+                                            style="@style/headerTitle_sub"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:gravity="left"
+                                            android:textAllCaps="true"
+                                            android:singleLine="true"
+                                            android:text="@string/convience_fee"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:textColor="#333333" />
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/mainHolder333"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="?android:selectableItemBackground"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/convienceAmountTVID"
+                                            style="@style/headerTitle_sub"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="right|center_vertical"
+                                            android:layout_gravity="right|center_vertical"
+                                            android:singleLine="true"
+                                            android:text="@string/rupee"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:textColor="@color/red" />
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+
+                                <View
+                                    android:id="@+id/viewLineTVID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.7dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@color/red" />
+
+
+                                <RelativeLayout
+                                    android:id="@+id/totalLableRLID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical"
+                                    android:transitionName="tNameHolder">
+
+                                    <LinearLayout
+                                        android:id="@+id/mainHolder44"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/mainHolder444"
+                                        android:background="?android:selectableItemBackground"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:id="@+id/totalAmountLabelTVID"
+                                            style="@style/headerTitle"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:gravity="center_vertical"
+                                            android:singleLine="true"
+                                           android:textAllCaps="true"
+                                            android:text="@string/pay_amount"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:textColor="#333333" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/mainHolder444"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="?android:selectableItemBackground"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/payAmountTVID"
+                                            style="@style/headerTitle"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:gravity="right|center_vertical"
+                                            android:singleLine="true"
+                                            android:text="@string/rupee"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:textColor="#333333" />
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/slotConfirmCards2CVID"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_below="@+id/slotConfirmCard2CVID"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/windowBackground"
+                        android:foregroundGravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/stylished_bg_checkout">
+
+                            <in.playcer.libs.PagerSlidingTabStrip
+                                android:id="@+id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dip"
+                                android:background="#00000000"
+                                app:pstsDividerColor="#00000000"
+                                app:pstsDividerPadding="17dp"
+                                app:pstsIndicatorColor="@color/colorPrimary"
+                                app:pstsShouldExpand="true"
+                                app:pstsUnderlineColor="@color/colorPrimary" />
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/pager"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/tabs" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/proccedBtnID"
+            style="@style/headerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:background="#4CAF50"
+            android:gravity="center"
+            android:text="@string/procced_to_pay"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

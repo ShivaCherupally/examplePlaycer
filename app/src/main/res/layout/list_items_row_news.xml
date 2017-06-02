@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sportsCardCVID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0.6dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="0.6dp"
+    android:background="#F9F9F9">
+
+    <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sportsCardCVID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="0.6dp"
+        card_view:cardBackgroundColor="#F9F9F9"
+        card_view:cardCornerRadius="@dimen/card_corner_radius"
+        card_view:cardElevation="@dimen/card_elevation">-->
+
+    <FrameLayout
+        android:id="@+id/sportsCardFrameFLID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_row_selector">
+
+            <!-- Thumbnail Image -->
+            <ImageView
+                android:id="@+id/thumbnailIVID"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/placeholder"
+                android:scaleType="centerCrop" />
+
+            <!-- Movie Title -->
+            <TextView
+                android:id="@+id/newsTitleTVID"
+                style="@style/helpDialogText_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/thumbnailIVID"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <!-- Rating -->
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newsTitleTVID"
+                android:layout_marginTop="1dip"
+                android:layout_toRightOf="@+id/thumbnailIVID"
+                android:text=""
+                android:textSize="@dimen/rating"
+                android:visibility="gone" />
+
+            <!-- Genre -->
+            <TextView
+                android:id="@+id/genre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rating"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/thumbnailIVID"
+                android:text=""
+                android:textColor="@color/genre"
+                android:textSize="@dimen/genre"
+                android:visibility="gone" />
+
+            <!-- Release Year -->
+            <TextView
+                android:id="@+id/releaseYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="@color/year"
+                android:textSize="@dimen/year"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <include
+        android:id="@+id/headerID"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerID">
+
+        <in.playcer.libs.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:layout_below="@+id/line"
+            android:background="#FFF"
+            app:pstsDividerColor="#00000000"
+            app:pstsDividerPadding="17dp"
+            app:pstsShouldExpand="true"
+            app:pstsIndicatorColor="@color/colorPrimary"
+            app:pstsUnderlineColor="@color/colorPrimary" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabs"
+            android:background="#EEEEEE" />
+    </RelativeLayout>
+
+</RelativeLayout>

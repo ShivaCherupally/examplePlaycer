@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentPanelRLID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+
+    <include
+        android:id="@+id/toolbarVVID"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/registrationRLID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/thankYouTVID"
+                style="@style/slot_avi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="@string/thankyou"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/confirmedBookingTVID"
+                style="@style/headerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thankYouTVID"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/booking_id"
+                android:textColor="#808080" />
+
+            <TextView
+                android:id="@+id/bookingIDTVID"
+                style="@style/headerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmedBookingTVID"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:text="@string/zero_amount"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#333333" />
+
+            <RelativeLayout
+                android:id="@+id/sportsCardCVID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmedBookingTVID"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#00000000"
+                android:visibility="gone">
+
+                <!-- <android.support.v7.widget.CardView
+                     android:id="@+id/sportsCardCVID"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:layout_marginTop="10dp"
+                     android:visibility="gone"
+                     android:layout_below="@+id/confirmedBookingTVID"
+                     card_view:cardCornerRadius="@dimen/card_corner_radius"
+                     card_view:cardElevation="@dimen/card_elevation"
+                     card_view:cardBackgroundColor="#00000000">-->
+
+
+                <FrameLayout
+                    android:id="@+id/sportsCardFrameFLID"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/mainHolder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:selectableItemBackground"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/NameHolder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:transitionName="tNameHolder">
+
+                                <TextView
+                                    android:id="@+id/clubNameTVID"
+                                    style="@style/headerTitle_small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="left"
+                                    android:text="SECUNDERABAD CLUB"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+
+                                <TextView
+                                    android:id="@+id/sportNameTVID"
+                                    style="@style/headerTitle_small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="left"
+                                    android:text="Badminton Court"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#333333" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="bottom"
+                                android:gravity="bottom"
+                                android:orientation="vertical"
+                                android:transitionName="tNameHolder">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="bottom"
+                                    android:orientation="vertical"
+                                    android:transitionName="tNameHolder">
+
+                                    <TextView
+                                        android:id="@+id/pickeddateTVID"
+                                        style="@style/headerTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sep 14, 2015"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="#333333" />
+
+                                    <TextView
+                                        android:id="@+id/PickedSlotTimeTVID"
+                                        style="@style/headerTitle_small"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="12:00 PM"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="#333333" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="3dp"
+                                    android:orientation="vertical"
+                                    android:transitionName="tNameHolder">
+
+                                    <TextView
+                                        android:id="@+id/locationTVID"
+                                        style="@style/headerTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="PATNY CENTER"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="#333333" />
+
+                                    <TextView
+                                        android:id="@+id/cityTVID"
+                                        style="@style/headerTitle_small"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="SECUNDERABAD"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="#333333" />
+
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/gotoHomeBtnID"
+                style="@style/headerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sportsCardCVID"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#4CAF50"
+                android:gravity="center"
+                android:text="Goto Home"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

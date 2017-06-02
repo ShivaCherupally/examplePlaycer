@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.playcer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <permission
+        android:name="in.playcer.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="in.playcer.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="in.playcer.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme">
+
+        <activity
+            android:name="in.playcer.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="in.playcer.DashboardActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="in.playcer.MyBookingsEventsSlotsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="in.playcer.ParticipateFullDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="in.playcer.ParticipateSingleBookingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="in.playcer.RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="in.playcer.VerificationExistingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="in.playcer.VerificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="in.playcer.ClubsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="in.playcer.SportsPickVenueActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="in.playcer.SingleSportSlotBookingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="in.playcer.SlotConfirmationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="in.playcer.MyBookingsSingleOrderListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="in.playcer.SlotConfirmationUnAvaiActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="in.playcer.SlotConfirmationManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="in.playcer.SuccessfullySlotConfirmedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="in.playcer.SingleArticleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="in.playcer.ui.activities.CitrusUIActivity"
+            android:label="@string/title_activity_citrus"
+            android:screenOrientation="portrait"
+            android:theme="@style/CitrusAppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="in.playcer.ui.activities.LoginFlowActivity"
+            android:label="@string/title_activity_login_flow"
+            android:screenOrientation="portrait"
+            android:theme="@style/CitrusAppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="in.playcer.CartPlaceOrdersListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="in.playcer.ScreenPlaycerCreditsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="in.playcer.ScreenInviteFriendsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!--Check Out Screen-->
+        <activity
+            android:name="in.playcer.ScreenCheckoutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="in.playcer.WebviewPlaycerUrl"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--Release Key-->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDpfZhXxEpkCRf0pGXB6osFHH5_qIt6kZY" />
+
+        <!--Debug Key-->
+        <!--<meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCymOG9il9LeeDnMuFIMTvbFRcVRq3desw" />-->
+
+        <!--Google Analytics -->
+        <!--
+          Optionally, register AnalyticsReceiver and AnalyticsService to support background
+          dispatching on non-Google Play devices
+        -->
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!--
+             Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable
+             installation campaign reporting
+        -->
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+    </application>
+</manifest>
